@@ -11,6 +11,7 @@ source=(
 sha256sums=(
   '3e81dfa7c5faba29df88a7c4569c7ebaf511c3de4d489a8c8e305ab51b9e3059'
 )
+install='brightnessctl.install'
 
 build() {
   cd $pkgname-$pkgver
@@ -20,7 +21,7 @@ build() {
 
 package() {
   cd $pkgname-$pkgver
-  make DESTDIR="$pkgdir" install
+  make UDEVDIR="/usr/lib/udev/rules.d" INSTALL_UDEV_RULES=1 DESTDIR="$pkgdir" install
 }
 
 # vim:set ts=2 sw=2 et:

@@ -3,6 +3,7 @@ pkgbase = brightnessctl
 	pkgver = 0.3.1
 	pkgrel = 1
 	url = https://github.com/Hummer12007/brightnessctl
+	install = brightnessctl.install
 	arch = i686
 	arch = x86_64
 	license = MIT
