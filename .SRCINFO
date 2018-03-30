@@ -1,7 +1,7 @@
 pkgbase = brightnessctl
 	pkgdesc = Lightweight brightness control tool
 	pkgver = 0.3.1
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/Hummer12007/brightnessctl
 	install = brightnessctl.install
 	arch = i686
