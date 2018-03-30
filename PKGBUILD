@@ -1,3 +1,5 @@
+# Maintainer: Antoine Damhet <antoine.damhet@lse.epita.fr>
+
 pkgname=brightnessctl
 pkgver=0.3.1
 pkgrel=2
