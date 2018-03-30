@@ -22,6 +22,9 @@ build() {
 package() {
   cd $pkgname-$pkgver
   make UDEVDIR="/usr/lib/udev/rules.d" INSTALL_UDEV_RULES=1 DESTDIR="$pkgdir" install
+
+  mkdir -p $pkgdir/usr/share/licenses/$pkgname
+  install -m 0644 LICENSE $pkgdir/usr/share/licenses/$pkgname/
 }
 
 # vim:set ts=2 sw=2 et:
